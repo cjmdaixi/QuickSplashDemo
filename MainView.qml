@@ -1,10 +1,7 @@
 ﻿import QtQuick 2.6
-import QtQuick.Window 2.2
-import QtQuick.Controls 2.2
-import QtQuick.Layouts 1.3
-import QtQuick.Dialogs 1.2
+import QtQuick.Window 2.3
 
-ApplicationWindow {
+Window {
 	id: window
     visible: true
     width: 800
@@ -20,4 +17,5 @@ ApplicationWindow {
         text: qsTr("Test window");
         anchors.centerIn: parent
     }
+    Component.onCompleted: window.show()
 }
