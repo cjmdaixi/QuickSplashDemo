@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MainView.qml</file>
+        <file>Splash.qml</file>
+        <file>res/splashscreen.png</file>
+    </qresource>
+</RCC>
