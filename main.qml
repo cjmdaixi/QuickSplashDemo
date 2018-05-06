@@ -5,18 +5,18 @@ import QtQuick.Controls 2.2
 QtObject {
 	id: root
 
-	property QtObject $splashScreen: Splash{}
+    property QtObject $splashScreen: Splash{}
 
 	property var loader: Loader{
         asynchronous: true
         source: "qrc:/MainView.qml"
-		active: false
+        active: false
         onLoaded: {
             $splashScreen.delay();
         }
     }
 
 	Component.onCompleted:{
-		loader.active = true;
-	}
+        loader.active = true;
+    }
 }

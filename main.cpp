@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[])
 {
-	QGuiApplication app(argc, argv);
+    QGuiApplication app(argc, argv);
 
 	auto engine = new QQmlApplicationEngine();
     engine->load(QUrl(QStringLiteral("qrc:/main.qml")));
